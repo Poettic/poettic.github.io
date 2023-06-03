@@ -1,0 +1,59 @@
+html {
+    background-color: rgb(1, 1, 43);
+    font-size: 62.5%;
+}
+.btn-test {
+    position: relative;
+}
+
+.btn-test::before, .btn-test::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: rgb(96,43,123,255       );
+    opacity: 0;
+    animation: ondaa 1.8s infinite;
+}
+
+.btn-test::before {
+    animation-delay: 1s;
+    
+}
+.btn-test::after {
+    animation-delay: 1.3s;
+    
+}
+.btn-test img {
+    position: relative;
+    z-index: 2;
+}
+img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+
+@keyframes ondaa {
+    0% {
+        transform: scale(1);
+    }
+
+    15% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1.4);
+    }
+}
+h1 {
+    font-size: 1rem;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    position: absolute;
+}
